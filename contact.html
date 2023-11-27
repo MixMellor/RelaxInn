@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relax Inn B&B</title>
+    <style>
+        body {
+            font-family: 'gill-sans', sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        header {
+            background-color: rgb(126, 1, 1);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            text-shadow:rgb(0, 0, 0);
+    
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Relax Inn</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="booking.html">Book</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="menu.html">Menu</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="contact.html">Contact</a>
+        <a href="review.html">Reviews</a>
+        <a href="about.html">About Us</a>
+        
+    </nav>
+
+    <main>
+        <main>
+            <h2>Contact Us</h2>
+        
+            <p>Feel free to reach out to us with any questions or inquiries. We look forward to hearing from you!</p>
+        
+            <form action="getbacktoyou.html" method="post" onsubmit="return redirectTogetbacktoyou()">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <br>
+        
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <br>
+        
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+                <br>
+        
+                <input type="submit" value="Send Message">
+                <script>
+                    function redirectTogetbacktoyou() {
+                        window.location.href = "getbacktoyou.html";
+                        return false;
+                    }
+                </script>
+            </form>
+        </main>
+    </main>
+
+    
+
+</body>
+
+</html>
